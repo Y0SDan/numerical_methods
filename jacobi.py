@@ -35,8 +35,8 @@ def jacobi(A, b, x0, max_iterations=100, tolerance=1e-6):
     return x  # Devolver la solución
 
 # Ejemplo de uso
-A = np.array([[4, -1, 0], [-1, 4, -1], [0, -1, 4]])  # Matriz de coeficientes
-b = np.array([5, 5, 10])  # Vector de términos independientes
+A = np.array([[4.0, -1.0, 0.0], [-1.0, 4.0, -1.0], [0.0, -1.0, 4.0]])  # Matriz de coeficientes
+b = np.array([5.0, 5.0, 10.0])  # Vector de términos independientes
 x0 = np.zeros_like(b)  # Vector inicial de la solución
 solution = jacobi(A, b, x0)  # Resolver el sistema
 print(solution)  # Imprimir la solución
